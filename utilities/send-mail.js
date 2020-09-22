@@ -31,7 +31,7 @@ exports.notice = (comment) => {
     let SITE_NAME = process.env.SITE_NAME;
     let NICK = comment.get('nick');
     let COMMENT = comment.get('comment');
-    let POST_URL = '//' + comment.get('url') + '#' + comment.get('objectId');
+    let POST_URL = 'https://' + comment.get('url') + '#' + comment.get('objectId');
     // let POST_URL = process.env.SITE_URL + comment.get('url') + '#' + comment.get('objectId');
     let SITE_URL = process.env.SITE_URL;
 
